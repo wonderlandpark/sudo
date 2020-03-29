@@ -20,7 +20,8 @@ export interface Config {
     token: string,
     owners: string[],
     prefix: string
-    game?: string
+    game?: string,
+    submitChannel: string
 }
 
 export interface Command {
@@ -44,4 +45,3 @@ export interface Props {
     name: string,
     alias: string[]
 }
-

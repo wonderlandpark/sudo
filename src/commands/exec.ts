@@ -1,14 +1,15 @@
 import { Args, Props, Command } from '../types'
+import config from '../config'
 import { exec, execSync } from 'child_process'
 
-export default class Ping implements Command {
+export default class CMD implements Command {
     public props:Props = { name: 'exec', alias: ['실행', 'run', 'sudo']}
     public async execute(params: Args){
         const { exec } = require('child_process')
 
   
     const request = params.message.data.args
-    if (params.message.author.id !== '285185716240252929') return params.message.channel.send('Opps No permission')
+    if (!config.owners.includes(params.message.author.id)) return params.message.channel.send('You are not in the sudoers file. This incident will be reported.')
     if (request.includes('client.token')&&request.includes('message')){
         return params.message.channel.send('토큰을 전송해도 될까요?')
     }

@@ -4,8 +4,8 @@
   "description": "My First Typescript Discord Bot",
   "main": "dist/index.js",
   "scripts": {
-    "watch": "node_modules/.bin/tsc -w",
-    "build": "node_modules/.bin/tsc",
+    "watch": "node_modules/.bin/tsc -w --skipLibCheck",
+    "build": "node_modules/.bin/tsc --skipLibCheck",
     "start": "npm run build && node dist/index.js"
   },
   "devDependencies": {
