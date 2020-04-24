@@ -1,6 +1,5 @@
 import { Args, Props, Command } from '../types'
 import config from '../config'
-import * as Discord from 'discord.js'
 
 export default class CMD implements Command {
     public props:Props = { name: 'submit', alias: ['신청']}

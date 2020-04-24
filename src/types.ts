@@ -14,6 +14,7 @@ export interface Message extends Discord.Message{
     cmd: string
     processed: Date
     }
+    channel: Discord.TextChannel
 } 
 
 export interface Config {
@@ -44,4 +45,9 @@ export interface Args {
 export interface Props {
     name: string,
     alias: string[]
+}
+
+export interface Tags {
+    name: string
+    text: string
 }

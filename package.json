@@ -4,9 +4,9 @@
   "description": "My First Typescript Discord Bot",
   "main": "dist/index.js",
   "scripts": {
-    "watch": "node_modules/.bin/tsc -w --skipLibCheck",
-    "build": "node_modules/.bin/tsc --skipLibCheck",
-    "start": "npm run build && node dist/index.js"
+    "watch": "tsc -w",
+    "build": "tsc",
+    "start": "node dist/index.js"
   },
   "devDependencies": {
     "@types/cheerio": "^0.22.6",

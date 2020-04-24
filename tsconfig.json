@@ -5,7 +5,8 @@
         "removeComments": true,
         "preserveConstEnums": true,
         "sourceMap": true,
-        "outDir": "dist",
+        "skipLibCheck": true,
+        "outDir": "dist"
     },
     "include": [
         "src"

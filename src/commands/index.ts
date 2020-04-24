@@ -7,7 +7,9 @@ import djs from './djs'
 import submit from './submit'
 import Eval from './eval'
 import ReadLog from './readLog'
+import tag from './tag'
 
-const commands:Command[] = [ new Ping(), new Discordstatus(), new Exec(), new djs(), new submit(), new Eval(), new ReadLog()] 
+const commands:Command[] = [ new Ping(), new Discordstatus(), new Exec(), new djs(), new tag(), new submit(), new Eval(), new ReadLog()] 
 
 export default commands
+
